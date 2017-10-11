@@ -14,7 +14,14 @@ album_1 = Album.new({
   'artist_id' => artist_1.id
   })
 
+  album_2 = Album.new({
+    'title' => 'We Were Dead Before the Ship Even Sank',
+    'genre' => 'Indie Rock',
+    'artist_id' => artist_1.id
+    })
+
 album_1.save()
+album_2.save()
 
 artist_2 = Artist.new({
   'name' => 'Honeyblood'
@@ -22,11 +29,39 @@ artist_2 = Artist.new({
 
 artist_2.save()
 
+album_3 = Album.new({
+  'title' => 'Babes Never Die',
+  'genre' => 'LoFi',
+  'artist_id' => artist_2.id
+  })
+
+  album_3.save()
+
 artist_3 = Artist.new({
   'name' => 'Run the Jewels'
   })
 
 artist_3.save()
+
+album_4 = Album.new({
+  'title' => 'Run the Jewels 3',
+  'genre' => 'Hip Hop',
+  'artist_id' => artist_3.id
+  })
+album_5 = Album.new({
+  'title' => 'Run the Jewels 2',
+  'genre' => 'Hip Hop',
+  'artist_id' => artist_3.id
+  })
+album_6 = Album.new({
+  'title' => 'Run the Jewels',
+  'genre' => 'Hip Hop',
+  'artist_id' => artist_3.id
+  })
+
+album_4.save()
+album_5.save()
+album_6.save()
 
 all_artists = Artist.all()
 for artist in all_artists
