@@ -38,6 +38,14 @@ for album in albums_by_artist
   puts album.title
 end
 
+all_albums = Album.all()
+for album in all_albums
+  puts album.title
+end
+
+artist_by_albums = album_1.artist_by_album()
+puts artist_by_albums.name
+
 
 pry.binding
 nil
